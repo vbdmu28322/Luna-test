@@ -1,0 +1,61 @@
+.background_panel {
+    background-image: url(../public/assets/background.png);
+    background-size: cover;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    min-height: 100vh;
+}
+.logoimage{
+    width: 40%;
+    height: auto;
+}
+.logo {
+    text-align: left;
+    padding: 15px;
+    margin: 20px;
+}
+
+
+.half_panel {
+    float: left;
+    padding: 15px;
+    width: 50%;
+}
+.text_panel{
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 4vw;
+}
+.auth_panel{
+    background-color: white;
+    border-radius: 3%;
+    padding: 15px;
+    width: 70%;
+    margin: auto;
+    box-shadow: 5px 5px 10px #888888;
+}
+.authform {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.authBtn {
+    width: 100%;
+    border-radius: 2px;
+}  
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .logoimage{
+        width: 60%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}

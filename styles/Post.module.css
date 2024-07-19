@@ -1,0 +1,36 @@
+.postForm{
+  width: 100%;
+  padding: 15px;
+}
+.postField{
+  width: 100%;
+  font-size: 20px;
+}
+.postBtn{
+  float: right;
+  width: 20%;
+}
+.articlePanel{
+  width: 100%;
+  padding: 15px;
+}
+.author{
+  font-size: 14px;
+  padding: 5px 10px;
+}
+.article{
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px #3d3d3d;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+.deletePost {
+  float: right;
+  width: 60px;
+  border-radius: 4px;
+  background-color: rgb(243, 83, 83);
+}
+.deletePost:hover {
+ 
+  background-color: rgb(255, 0, 0);
+}
