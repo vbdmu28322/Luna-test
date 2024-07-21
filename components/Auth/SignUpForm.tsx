@@ -7,7 +7,6 @@ import Link from 'next/link';
 import { deleteObject, getDownloadURL as getStorageDownloadURL, ref, uploadBytes } from 'firebase/storage';
 import { storage } from '../../firebase/firebase';
 import { format } from 'date-fns';
-import { BUCKET_URL } from '@/firebase/storage';
 import styles from "@/styles/Auth.module.css"
 import logoImage from "@/public/assets/luna_logo_color.png"
 import Image from 'next/image';
@@ -64,7 +63,7 @@ const SignUpForm: React.FC = () => {
       return;
     }
     const formattedDate = format(new Date(), "yyyy-MM-dd'T'HH:mm:ss'Z'");
-    const bucket = `${BUCKET_URL}/${uid}/${formattedDate}.jpg`;
+    const bucket = `${process.env.NEXT_PUBLIC_STORAGEBUCKET_URL}/${uid}/${formattedDate}.jpg`;
     try {
       await uploadBytes(ref(storage, bucket), profileIcon);
       console.log("プロフィールアイコンが正確にアップロードされました。");

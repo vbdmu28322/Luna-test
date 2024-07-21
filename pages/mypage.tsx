@@ -6,7 +6,7 @@ import Navbar from '@/components/Navbar/Navbar';
 import { useRouter } from 'next/router';
 import MyPosts from '@/components/Post/MyPosts';
 
-const Dashboard: React.FC = () => {
+const Mypage: React.FC = () => {
   const { user, loading } = useAuth();
   const router = useRouter();
 
@@ -32,4 +32,4 @@ const Dashboard: React.FC = () => {
   );
 };
 
-export default Dashboard;
+export default Mypage;
