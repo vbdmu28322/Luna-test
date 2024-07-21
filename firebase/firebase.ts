@@ -4,12 +4,12 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBGwfwUZTd6wNBILo0yTBBbCNhv-yyIibQ",
-    authDomain: "nextauth-11f30.firebaseapp.com",
-    projectId: "nextauth-11f30",
-    storageBucket: "nextauth-11f30.appspot.com",
-    messagingSenderId: "922711768211",
-    appId: "1:922711768211:web:b26340c06a69a81af9a166"
+    apiKey: process.env.NEXT_PUBLIC_FIREBASE_APIKEY,
+    authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTHDOMAIN,
+    projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECTID,
+    storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGEBUCKET,
+    messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_IdMESSAGEINGSENDERID,
+    appId: process.env.NEXT_PUBLIC_FIREBASE_APPID
   };
 
 const app = initializeApp(firebaseConfig);
