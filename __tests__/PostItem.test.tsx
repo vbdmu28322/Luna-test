@@ -7,11 +7,6 @@ jest.mock('../firebase/firebase', () => ({
     auth: {},
     db: jest.fn()
 }));
-jest.mock('../firebase/firestore', () => ({
-    getFirestore: jest.fn(),
-    doc: jest.fn(),
-    deleteDoc: jest.fn()
-}));
 
 jest.mock('../contexts/AuthContext');
 
