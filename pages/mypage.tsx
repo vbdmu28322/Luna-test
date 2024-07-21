@@ -4,6 +4,7 @@ import PostList from '../components/Post/PostList';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar/Navbar';
 import { useRouter } from 'next/router';
+import MyPosts from '@/components/Post/MyPosts';
 
 const Dashboard: React.FC = () => {
   const { user, loading } = useAuth();
@@ -24,8 +25,9 @@ const Dashboard: React.FC = () => {
 
   return (
     <div>
-      <Navbar/>
-      <PostList />
+        <Navbar/>
+        <PostForm />
+        {user?.uid && <MyPosts userId={user.uid} />}
     </div>
   );
 };
